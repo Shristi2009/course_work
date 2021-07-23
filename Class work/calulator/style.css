@@ -1,0 +1,122 @@
+#app {
+    width: 95%;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+#app #vending-machine {
+    border: 1px solid black;
+    background-color: lightgray;
+    height: 500px;
+    width: 400px;
+}
+
+#app #vending-machine #title {
+    background-color: gray;
+}
+
+#app #vending-machine #items {
+    background-color: black;
+}
+
+#app #vending-machine #controls {
+    border: 1px solid black;
+    background-color: white;
+}
+
+#app #vending-machine .input-screen {
+    background-color: black;
+    color: greenyellow;
+    font-size: 18px;
+    text-align: center;
+}
+
+#app #vending-machine #item-slot {
+    background-color: black;
+}
+
+#app #item-container {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 35px repeat(3, 1fr);
+    grid-template-rows: 35px repeat(4, 1fr);
+    text-align: center;
+}
+
+#app #item-container > span:nth-child(6) {
+    grid-row-start: 2;
+    align-self: center;
+}
+
+#app #item-container > span:nth-child(7) {
+    grid-row-start: 3;
+    align-self: center;
+}
+
+#app #item-container > span:nth-child(8) {
+    grid-row-start: 4;
+    align-self: center;
+}
+
+#app #item-container > span:nth-child(9) {
+    grid-row-start: 5;
+    align-self: center;
+}
+
+#app #item-container > span {
+    order: 0;
+}
+
+#app.grid #vending-machine {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15% 70% 15%;
+    max-width: 400px;
+}
+
+#app.grid #title {
+    grid-column: 1/end;
+}
+
+#app.grid #items {
+    grid-column: 2/end;
+    grid-row: 2/end;
+    order: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+}
+
+#app.grid #items span {
+    font-size: 30px;
+}
+
+#app.grid #controls {
+    grid-column: 4;
+    height: 45%;
+    margin-top: 25px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 50%;
+    grid-template-rows: 20% repeat(3, 1fr);
+}
+
+#app.grid .input-screen {
+    grid-column-start: 1;
+    grid-column-end: end;
+    margin: 2px 5px;
+}
+
+#app.grid .input-screen p {
+    margin: 0;
+}
+
+#app.grid #item-slot {
+    grid-column: 2/4;
+    margin: 10px 0;
+}

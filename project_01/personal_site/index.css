@@ -1,0 +1,37 @@
+    header{
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(189, 177, 172);
+    color: white;
+    }
+    
+  
+    
+  
+   body {
+   font-family: "Helvetica", Sans-Serif;
+   color: white;
+   
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("https://images.pexels.com/photos/1084542/pexels-photo-1084542.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+      background-repeat:no-repeat;
+      background-size:cover;
+
+  }
+
+   .Quote {
+     text-align: center;
+    
+
+   }
+       
+    footer{
+    text-align: center;
+    padding: 3px;
+    background-color:  rgb(189, 177, 172);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  
+              
+  }

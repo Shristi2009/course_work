@@ -1,0 +1,14 @@
+$('.red h3').html( ' Abacus Central');
+$('.blue h3').css('font-family','Grenadlne Dreams');
+$('.white h3').html('<code>CODE</code> Central');
+$('h1').html('Hello world !');
+$('body').css({"font-family":"sans-serif","background-color":"#777","font-size":"1.7em"});
+$('section').css('display','flex');
+$('section div').css({"border":"1px solid #000000","padding":"10px","margin":"10px","flex":"1"});
+$('.red').css({"background-color":"red","color":"white"});
+$('.blue').css({"background-color":"blue","color":"white"});
+$('.white').css({"background-color":"white"});
+$('.lead-cards p').css('font-family','cursive');
+$('.deprecated').remove();
+$('section:nth-child(2)').css('transform','rotate(30deg) scale(.5)');
+$('section:nth-child(2)').css('transition','transform 3s ease');

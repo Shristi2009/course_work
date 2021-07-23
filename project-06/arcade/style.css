@@ -1,0 +1,106 @@
+
+  
+  header {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    font-size: 100px;
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+  }
+
+  body {
+    background: #eee;
+  }
+
+  main {
+    display: grid;
+    height: 1000px;
+    width: 1500px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:10% 15% 10% 50%;
+    margin: auto;
+    font-size: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+    justify-content: center;
+  }
+
+  .submitName {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+
+  input[type=button] {
+    background-color: #e63946ff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6%;
+    box-shadow: 5px 10px 20px grey inset;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 10px;
+    margin: auto;  
+  }
+
+  .restart {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto;
+    padding: 10px 10px;
+    place-self: center;
+    font-size: 30px;
+  }
+
+  button{
+    background-color: #e63946ff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6%;
+    box-shadow: 5px 10px 20px grey inset;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 10px;
+  }
+
+  .displayName {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 30px;
+    place-self: center;
+  }
+
+  button:hover{
+    background-color:green;
+  }
+
+
+  .board {
+
+    grid-column: 2/3;
+    grid-row: 4/5;
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
+    font-size: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+    justify-content: center;
+  }
+
+  .cell {
+    border: 1px solid crimson;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .cell:hover {
+    background-color: darkgray;
+    text-shadow: aqua;
+  }
+
+ 
